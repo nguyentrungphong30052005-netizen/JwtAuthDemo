@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Đăng nhập";
+}
+<div style="width: 300px; margin: 50px auto; font-family: Arial;">
+    <h2>Đăng nhập hệ thống</h2>
+    <p>Test: <code>user1</code>/<code>123</code> hoặc <code>admin1</code>/<code>123</code></p>
+    @if (ViewBag.Error != null)
+    {
+        <p style="color: red;">@ViewBag.Error</p>
+    }
+    <form asp-action="Login" method="post">
+        <div style="margin-bottom: 10px;">
+            <label>Username:</label><br />
+            <input type="text" name="username" value="user1" style="width: 100%; padding: 5px;" />
+        </div>
+        <div style="margin-bottom: 10px;">
+            <label>Password:</label><br />
+            <input type="password" name="password" value="123" style="width: 100%; padding: 5px;" />
+        </div>
+        <button type="submit" style="width: 100%; padding: 8px; background: #0078d4; color: white; border: none;">Đăng nhập</button>
+    </form>
+</div>

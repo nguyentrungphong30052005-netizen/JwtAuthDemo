@@ -1,0 +1,11 @@
+﻿@{
+    ViewData["Title"] = "Quản trị Admin";
+}
+<div style="margin: 40px; font-family: Arial;">
+    <h2 style="color: darkred;">Khu vực Quản trị tối mật (Chỉ Admin)</h2>
+    <p>Xin chào Admin: <b>@ViewBag.Username</b></p>
+    <p>
+        <a asp-action="Dashboard">Quay lại Dashboard</a> |
+        <a asp-action="Logout" style="color: red;">Đăng xuất</a>
+    </p>
+</div>
